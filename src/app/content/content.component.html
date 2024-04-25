@@ -1,0 +1,40 @@
+
+<div class="container">
+
+    <br><br>
+    
+    <h1 style="color: #FF7A00; font-size: 35px;"><b>Hi, I’m Prashant</b></h1>
+
+        <br>
+        <p>We live in a very fast paced, rapidly changing, uncertain world. Uncertainty brings anxiety, fear, insecurities and many emotional challenges along with it. People often chose ways to ignore these issues. But this ignorance make problems to pile up, creating bigger problems in future. The way to deal with such emotional issues is to acknowledge them, understand them and then take action accordingly.</p>
+        
+        <br><div class="img"></div><br>
+
+        <p>
+        Humans are emotional beings. We are driven by emotions. Emotions are natures way of telling us what to do and what not to, indicating what will benefit us and what will harm us. Here I have made an attempt to help you to just do that, to make more aware emotionally through my content, so that you can take control of your well-being.</p>
+        <br>
+
+        
+    <hr>
+
+    <div class="row" style="text-align: center;">
+        <a class="col" routerLink="/allArticles"><i class="articleUrl">Read our articles</i></a>
+        <!-- <i class="col"><a>Login</a></i> -->
+    </div>
+
+    <hr>
+
+
+    <div class="card">
+        <h4>OUR RECOMMENDATIONS</h4>
+
+        <hr>
+
+        <li *ngFor="let article of recommendedArticles">            
+            <a routerLink="/article/{{article.articleId}}"><i>{{article.articleName}}</i></a>
+        </li>   
+    </div>
+
+    <br>
+
+</div>

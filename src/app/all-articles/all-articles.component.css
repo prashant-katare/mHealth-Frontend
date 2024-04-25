@@ -1,0 +1,27 @@
+.articleListCard {
+    /* border-right: 2px solid #FF7A00;  */
+    /* border-radius: 10px; 
+    margin: 5px; */
+    padding: 10px;
+
+}
+
+.articleListCardHead {
+    background-color: #FF7A00; color: white;
+    padding: 10px 10px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+}
+
+.articleListCard li a {
+    color: black;
+}
+
+.img {
+    background-image:  url("src\assets\images\book.jpg");
+    background-size: cover;
+    width: auto;
+    height: 35vh;
+    display: block;      
+}

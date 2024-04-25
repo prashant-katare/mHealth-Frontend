@@ -1,0 +1,101 @@
+.item {
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    color: white;
+}
+
+.item:hover {
+    color: #FF7A00;
+}
+
+.navBar {
+    padding: 20px;
+    background-color: #393e46;
+}
+
+.smallScreenNavBar {
+    display: block;
+    background-color: #393e46;
+    margin: -10px 0 5px 0;  /* To avoind space above navbar when it expands*/
+    padding: 15px;
+}
+
+
+.smallScreenNavBar a {
+    display: block;
+    padding: 10px;
+    background-color: #393e46;
+}
+
+.title {
+    color: white; 
+    display: inline;
+}
+
+
+.ham {
+    display: none;
+    float: right;
+}
+
+.cross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.categoryBtn{
+    float: right; 
+    margin-right: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navBar a{
+        display: none;
+    }
+
+    .ham {
+        display: block;
+    }
+
+    .categoryBtn{
+        float: none; 
+        margin-right: 0px;
+        width: auto;
+        text-align: center;
+        display: none;
+    }
+
+    .dropdown-content {
+        border-radius: 0px 0px;
+        text-align: center;
+        padding: 0px;
+      }
+      
+      .dropdown-content div a {
+        background-color: #606470;
+        width:100vw ;
+        padding: 0px;
+      }
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #393e46;
+    min-width: 200px;
+    padding: 8px;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 1;
+  }
+  
+.dropdown-content div a {
+    padding: 10px;
+}
+
+
+

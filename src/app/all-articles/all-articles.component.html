@@ -1,0 +1,50 @@
+<div class="container">
+
+    <br>
+
+    <div class="card">
+        <h4>OUR RECOMMENDATIONS</h4>
+
+        <hr>
+
+        <div *ngFor="let article of recommendedArticles">
+            <li>         
+                <a routerLink="/article/{{article.articleId}}"><i>{{article.articleName}}</i></a>
+            </li>   
+        </div>   
+    </div>
+    
+    <br>
+
+    <div style="padding: 20px;">
+        
+        <h1 style="color: #FF7A00;"><b>Articles by Topic</b></h1>   
+         
+        <hr>
+
+        <div class="row">
+
+                <div class="col-12 articleListCard" *ngFor="let category of allArticlesData">
+
+                    <h3 class="articleListCardHead">{{category.categoryName}}</h3>
+                        
+                    <li *ngFor="let article of category.articles">
+                       <a routerLink="/article/{{article.articleId}}"><i>{{article.articleName}}</i></a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: underline;" routerLink="/articlesByTopic/{{category.categoryId}}"><i>Read more about {{category.categoryName}}</i></a>
+                    </li>  
+
+                    <hr>
+
+                </div>
+                
+            
+        </div>
+
+        <div class="img"></div>
+
+
+    </div>
+
+</div>

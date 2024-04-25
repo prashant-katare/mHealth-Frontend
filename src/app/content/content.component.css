@@ -1,0 +1,7 @@
+.img {
+    background-image:  url("src\assets\images\shelf.jpg");
+    background-size: cover;
+    width: auto;
+    height: 45vh;
+    display: block;
+}

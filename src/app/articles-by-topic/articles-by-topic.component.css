@@ -1,0 +1,7 @@
+.img {
+    background-image:  url("src\assets\images\creative.jpg");
+    background-size: cover;
+    width: auto;
+    height: 50vh;
+    display: block;
+}

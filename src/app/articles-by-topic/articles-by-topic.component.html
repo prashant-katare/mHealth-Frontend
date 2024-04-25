@@ -1,0 +1,35 @@
+<div class="container">
+
+    <br>
+
+    <div>
+        <h1 style="color: #FF7A00;"><b>All articles on {{articlesByTopic.categoryName}}</b></h1>    
+    </div>
+
+    <hr>
+
+    <div *ngFor="let article of articlesByTopic.articles">
+        <li>  
+            <a class="articleUrl" routerLink="/article/{{article.articleId}}"><i>{{article.articleName}}</i></a>
+        </li>  
+    </div>   
+
+    <hr>
+
+    <div class="img"></div>
+
+    <br>
+
+    <div class="card">
+        <h4>OUR RECOMMENDATIONS</h4>
+
+        <hr>
+
+        <li *ngFor="let article of recommendedArticles">            
+            <a routerLink="/article/{{article.articleId}}"><i>{{article.articleName}}</i></a>
+        </li>   
+    </div>
+
+    <br>
+    
+</div>

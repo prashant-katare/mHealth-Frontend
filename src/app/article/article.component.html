@@ -1,0 +1,36 @@
+<div class="container">
+
+    <br>
+
+    <div>
+        <h1 style="color: #FF7A00;"><b>{{articleData.articleName}}</b></h1>
+
+        <div>
+            <h5>Written by - Prashant Katare</h5>
+            <h5>Filed under - {{articleData.category}}</h5>
+        </div>
+    
+        <hr><br>
+
+        <div>
+            <div [innerHTML]="articleData.articleContent"></div>
+        </div>
+
+        <br><hr>
+
+    </div>
+
+    <div class="card">
+        <h4>More articles on {{articlesByTopic.categoryName}}</h4> 
+
+        <hr>
+
+        <li *ngFor="let article of articlesByTopic.articles">
+            <a routerLink="/article/{{article.articleId}}" (click)="getNewArticleData(article.articleId)"><i>{{article.articleName}}</i></a> 
+        </li>
+    </div>
+
+    <br>
+
+</div>
+
