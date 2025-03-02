@@ -1,3 +1,7 @@
+# About
+
+Frontend using Angular for my Blog Aplication. The code structure is fairly simple because it was one of my first hands-on project. I was learning and and working on this project on the same time.
+
 # MHealth
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
